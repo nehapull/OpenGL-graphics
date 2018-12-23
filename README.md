@@ -8,7 +8,7 @@ Project 2: Implmented 3D transformations (translation, rotation, scaling) and pr
            an output for 3D rotation of a cube with a rotation axis.
            
 Project 3: Implemented the Phong Shading Model to find the intensities of each vertex of three 3D polyhedral objects using a 
-           a triangular mesh. The intensities from Phong were then used to implement 3D Gouraud shading using linear
+           triangular mesh. The intensities from Phong were then used to implement 3D Gouraud shading using linear
            interpolation. The polygons were redrawn and mapped to pixel coordinates. The program also allows the user to 
            choose between turning on and off half-toning. Half-toning was implemented by simulating ten intensity levels using
            3X3 virtual pixels.
