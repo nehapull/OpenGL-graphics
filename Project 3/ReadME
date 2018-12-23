@@ -1,0 +1,15 @@
+This project implements the following using the basic OpenGL function glDrawPixels:
+
+1. Phong Lighting Model: The intensities at each vertex of a 3D polyhedral object are computed based on user input for ambient,
+   diffuse, and specular coefficients of the phong model. This is done using a triangular mesh.
+
+2. Gouraud shading: Each polyhedral object is orthographically projected, and the triangular mesh is used to rasterize each
+   triangle pixel by pixel using linear interpolation of the intensities at the edges of the triangles.
+
+3. Half toning for binary display devices: Virtual pixels which occupy 3X3 pixel squares on a binary display device were used
+   to rasterize traingles. These were then mapped to the corresponding screen location. 
+   
+4. Hidden surface removal using Painter's algorithm: Orthographic projection followed by sorting of triangular mesh based on
+   depth was implemented. Following the painter's algorithm, the triangles were rasterized from back to front. A simple
+   bubble sort was used to sort the triangles due to the small size of the scene.  
+   
